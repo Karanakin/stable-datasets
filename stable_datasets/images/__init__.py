@@ -4,8 +4,10 @@ from .arabic_characters import ArabicCharacters
 from .arabic_digits import ArabicDigits
 from .awa2 import AWA2
 from .beans import Beans
+from .breakhis import BreakHis
 from .cars3d import Cars3D
 from .cars196 import Cars196
+from .chest_xray import ChestXray
 from .cifar10 import CIFAR10
 from .cifar10_c import CIFAR10C
 from .cifar100 import CIFAR100
@@ -52,8 +54,10 @@ __all__ = [
     "ArabicDigits",
     "AWA2",
     "Beans",
+    "BreakHis",
     "Cars196",
     "Cars3D",
+    "ChestXray",
     "CIFAR10",
     "CIFAR10C",
     "CIFAR100",
