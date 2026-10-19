@@ -4,7 +4,7 @@ from .arabic_characters import ArabicCharacters
 from .arabic_digits import ArabicDigits
 from .awa2 import AWA2
 from .beans import Beans
-from .breakhis import BreakHis
+from .bee_dataset import BeeDataset
 from .cars3d import Cars3D
 from .cars196 import Cars196
 from .chest_xray import ChestXray
@@ -54,7 +54,7 @@ __all__ = [
     "ArabicDigits",
     "AWA2",
     "Beans",
-    "BreakHis",
+    "BeeDataset",
     "Cars196",
     "Cars3D",
     "ChestXray",
