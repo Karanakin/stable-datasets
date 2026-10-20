@@ -7,7 +7,7 @@ from .beans import Beans
 from .bee_dataset import BeeDataset
 from .cars3d import Cars3D
 from .cars196 import Cars196
-from .chest_xray import ChestXray
+from .chest_xray_pnemonia import ChestXRayPneumonia
 from .cifar10 import CIFAR10
 from .cifar10_c import CIFAR10C
 from .cifar100 import CIFAR100
@@ -57,7 +57,7 @@ __all__ = [
     "BeeDataset",
     "Cars196",
     "Cars3D",
-    "ChestXray",
+    "ChestXRayPneumonia",
     "CIFAR10",
     "CIFAR10C",
     "CIFAR100",
