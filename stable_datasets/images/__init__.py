@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 
+from .aiderv2 import AIDERv2
 from .arabic_characters import ArabicCharacters
 from .arabic_digits import ArabicDigits
 from .awa2 import AWA2
@@ -7,7 +8,6 @@ from .beans import Beans
 from .bee_dataset import BeeDataset
 from .cars3d import Cars3D
 from .cars196 import Cars196
-from .chest_xray_pnemonia import ChestXRayPneumonia
 from .cifar10 import CIFAR10
 from .cifar10_c import CIFAR10C
 from .cifar100 import CIFAR100
@@ -50,6 +50,7 @@ from .tiny_imagenet_c import TinyImagenetC
 
 
 __all__ = [
+    "AIDERv2",
     "ArabicCharacters",
     "ArabicDigits",
     "AWA2",
@@ -57,7 +58,6 @@ __all__ = [
     "BeeDataset",
     "Cars196",
     "Cars3D",
-    "ChestXRayPneumonia",
     "CIFAR10",
     "CIFAR10C",
     "CIFAR100",
