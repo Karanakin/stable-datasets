@@ -87,11 +87,6 @@ Usage Example
    # Optional: make it PyTorch-friendly
    train_torch = train_ds.with_format("torch")
 
-Related Datasets
-----------------
-
-AIDERv2 is intended for image classification and representation-learning experiments involving disaster recognition and aerial imagery.
-
 References
 ----------
 

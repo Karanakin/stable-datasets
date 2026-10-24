@@ -86,10 +86,10 @@ Citation
 
 .. code-block:: bibtex
 
-@misc{BeeAlarmed - A camera based bee-hive monitoring,
-  title =   "Dataset for a camera based bee-hive monitoring",
-  url={https://github.com/BeeAlarmed}, journal={BeeAlarmed},
-  author =  "Fabian Hickert",
-  year   =  "2021",
-  note   = "\url{https://raspbee.de/} and \url{https://github.com/BeeAlarmed/BeeAlarmed}"
-}
+    @misc{BeeAlarmed - A camera based bee-hive monitoring,
+    title =   "Dataset for a camera based bee-hive monitoring",
+    url={https://github.com/BeeAlarmed}, journal={BeeAlarmed},
+    author =  "Fabian Hickert",
+    year   =  "2021",
+    note   = "\url{https://raspbee.de/} and \url{https://github.com/BeeAlarmed/BeeAlarmed}"
+    }
