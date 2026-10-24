@@ -58,7 +58,7 @@ class BeeDataset(BaseDatasetBuilder):
             year={2021},
             url={https://github.com/BeeAlarmed/BeeDataset}
         }""",
-        license="GPL",
+        license="GPL-3.0",
     )
 
     def _info(self):

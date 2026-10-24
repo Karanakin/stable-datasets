@@ -71,6 +71,8 @@ Available Datasets
    face_pointing
    rock_paper_scissor
    linnaeus5
+   bee_dataset
+   aiderv2
 
 .. toctree::
    :maxdepth: 1

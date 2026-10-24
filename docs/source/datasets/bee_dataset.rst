@@ -1,0 +1,95 @@
+BeeDataset
+==========
+
+.. raw:: html
+
+   <p style="display: flex; gap: 10px;">
+   <img src="https://img.shields.io/badge/Task-Multi--Label%20Classification-blue" alt="Task: Multi-Label Classification">
+   <img src="https://img.shields.io/badge/Labels-4-green" alt="Labels: 4">
+   <img src="https://img.shields.io/badge/Size-Variable-orange" alt="Image Size: 300 X 150">
+   </p>
+
+Overview
+--------
+
+The BeeDataset contains images of bees annotated with four binary labels. Each label represents a separate attribute, allowing an image to have multiple positive labels.
+
+The dataset provides the following labels:
+
+- **varroa**
+- **pollen**
+- **wasps**
+- **cooling**
+
+The dataset's split sizes and original image resolution should be documented here once confirmed from the dataset loader and source.
+
+.. image:: teasers/bee_dataset_teaser.png
+   :align: center
+   :width: 90%
+
+Data Structure
+--------------
+
+When accessing an example using ``ds[i]``, you will receive a dictionary with the following keys:
+
+.. list-table::
+   :header-rows: 1
+   :widths: 20 20 60
+
+   * - Key
+     - Type
+     - Description
+   * - ``image``
+     - ``PIL.Image.Image``
+     - Image of a bee.
+   * - ``varroa``
+     - int
+     - Binary label indicating the presence or absence of varroa.
+   * - ``pollen``
+     - int
+     - Binary label indicating the presence or absence of pollen.
+   * - ``wasps``
+     - int
+     - Binary label indicating the presence or absence of wasps.
+   * - ``cooling``
+     - int
+     - Binary label indicating the cooling-related annotation.
+
+Usage Example
+-------------
+
+**Basic Usage**
+
+.. code-block:: python
+
+   from stable_datasets.images.bee_dataset import BeeDataset
+
+   # Load the training split
+   ds = BeeDataset(split="train")
+
+   sample = ds[0]
+   print(sample.keys())
+
+   # Optional: make it PyTorch-friendly
+   ds_torch = ds.with_format("torch")
+
+References
+----------
+
+- Dataset website: https://github.com/BeeAlarmed/BeeDataset?tab=readme-ov-file
+- Tensorflow information source: https://www.tensorflow.org/datasets/catalog/bee_dataset
+- Original dataset source - deprecated : https://raspbee.de 
+- License:  GLP-3.0 LICENSE
+
+Citation
+--------
+
+.. code-block:: bibtex
+
+@misc{BeeAlarmed - A camera based bee-hive monitoring,
+  title =   "Dataset for a camera based bee-hive monitoring",
+  url={https://github.com/BeeAlarmed}, journal={BeeAlarmed},
+  author =  "Fabian Hickert",
+  year   =  "2021",
+  note   = "\url{https://raspbee.de/} and \url{https://github.com/BeeAlarmed/BeeAlarmed}"
+}
