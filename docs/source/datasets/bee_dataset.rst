@@ -21,7 +21,7 @@ The dataset provides the following labels:
 - **wasps**
 - **cooling**
 
-The dataset's split sizes and original image resolution should be documented here once confirmed from the dataset loader and source.
+ **Train**: 7,490 images (the dataset has no official validation or test split)
 
 .. image:: teasers/bee_dataset_teaser.png
    :align: center
