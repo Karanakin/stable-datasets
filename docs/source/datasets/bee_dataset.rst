@@ -25,7 +25,7 @@ The dataset provides the following labels:
 
 .. image:: teasers/bee_dataset_teaser.png
    :align: center
-   :width: 90%
+   :width: 50%
 
 Data Structure
 --------------
